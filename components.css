@@ -1,0 +1,87 @@
+/* Valver v1.1 · importar depois de tokens.css. Classes públicas com prefixo v-. */
+
+/* Tipografia: identidade Valver preservada. */
+.v-display, .v-h1, .v-h2, .v-h3 { font-family: var(--v-font-display); font-weight: 600; margin: 0; letter-spacing: -.035em; line-height: var(--v-leading-heading); }
+.v-display { font-size: var(--v-text-display); line-height: var(--v-leading-display); }
+.v-h1 { font-size: var(--v-text-h1); }
+.v-h2 { font-size: var(--v-text-h2); }
+.v-h3 { font-size: var(--v-text-h3); }
+.v-label { font: 600 var(--v-text-label)/1.5 var(--v-font-body); letter-spacing: var(--v-tracking-label); text-transform: uppercase; }
+.v-body { font: 400 var(--v-text-body)/var(--v-leading-body) var(--v-font-body); }
+.v-icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+/* Ações: uma hierarquia, três níveis, nenhuma sombra. */
+.v-button {
+  box-sizing: border-box;
+  min-height: 48px;
+  max-width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--v-space-3);
+  border: 1px solid transparent;
+  border-radius: var(--v-radius-action);
+  padding: 12px 24px;
+  background: var(--v-action);
+  color: var(--v-on-action);
+  font: 500 var(--v-text-small)/1.5 var(--v-font-body);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--v-duration-fast) ease, transform var(--v-duration-fast) var(--v-ease), border-color var(--v-duration-fast) ease;
+}
+.v-button > .v-icon { width: 18px; height: 18px; }
+.v-button:hover:not(:disabled) { background: var(--v-action-hover); }
+.v-button:active:not(:disabled) { transform: scale(var(--v-press-scale)); }
+.v-button--secondary { border-color: var(--v-control-line); color: var(--v-action); background: transparent; }
+.v-button--secondary:hover:not(:disabled) { background: var(--v-sage); border-color: var(--v-action); }
+.v-button--quiet { background: transparent; color: var(--v-action); padding-inline: 0; border-radius: var(--v-radius-control); }
+.v-button--quiet:hover:not(:disabled) { background: transparent; text-decoration: underline; text-underline-offset: 5px; }
+.v-button:disabled { background: var(--v-line); color: var(--v-stone); border-color: var(--v-line); cursor: not-allowed; }
+.v-button:focus-visible, .v-input:focus-visible, .v-select:focus-visible, .v-check:focus-visible, .v-faq summary:focus-visible { outline: 2px solid var(--v-olive); outline-offset: 4px; }
+
+/* Formulários: rótulos permanentes, bordas legíveis, ritmo consistente. */
+.v-field { display: grid; gap: var(--v-space-2); font: 500 var(--v-text-small)/1.5 var(--v-font-body); }
+.v-input, .v-select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 16px;
+  border: 1px solid var(--v-control-line);
+  border-radius: var(--v-radius-control);
+  background: var(--v-paper);
+  color: var(--v-text);
+  font: 400 var(--v-text-body)/1.5 var(--v-font-body);
+  transition: border-color var(--v-duration-fast) ease;
+}
+.v-input::placeholder { color: var(--v-text-muted); }
+.v-input[aria-invalid='true'] { border-color: var(--v-error); }
+.v-help { color: var(--v-text-muted); font: 400 .75rem/1.6 var(--v-font-body); }
+.v-help--error { color: var(--v-error); }
+.v-check { accent-color: var(--v-action); width: 18px; height: 18px; margin: 0; flex-shrink: 0; }
+.v-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: var(--v-radius-pill); color: var(--v-olive-dark); background: var(--v-sage); font: 500 .75rem/1.5 var(--v-font-body); }
+.v-alert { display: flex; align-items: start; gap: var(--v-space-3); padding: var(--v-space-6); border-radius: var(--v-radius-control); background: var(--v-success-bg); color: var(--v-success); font: 400 var(--v-text-small)/1.6 var(--v-font-body); }
+.v-alert--error { background: var(--v-error-bg); color: var(--v-error); }
+.v-alert--warning { background: var(--v-warning-bg); color: var(--v-warning); }
+
+/* Cards: a superfície delimita o grupo, a ação identifica o clique. */
+.v-card { padding: var(--v-component-padding); background: var(--v-surface); border: 0; border-radius: var(--v-radius-card); }
+.v-service { display: grid; gap: var(--v-space-6); align-content: start; }
+.v-service > .v-icon { width: 40px; height: 40px; color: var(--v-action); }
+.v-service p { margin: 0; color: var(--v-text-muted); font: 400 var(--v-text-body)/var(--v-leading-body) var(--v-font-body); max-width: 42ch; }
+.v-service .v-button { justify-self: start; }
+.v-faq { border-block-end: 1px solid var(--v-line); padding: var(--v-space-3) 0; font: 400 var(--v-text-small)/var(--v-leading-body) var(--v-font-body); }
+.v-faq summary { min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: var(--v-space-6); cursor: pointer; font-weight: 500; list-style: none; }
+.v-faq summary::-webkit-details-marker { display: none; }
+.v-faq summary::after { content: '+'; font: 400 22px/1 var(--v-font-body); color: var(--v-action); flex-shrink: 0; }
+.v-faq[open] > summary::after { content: '−'; }
+.v-faq p { margin: var(--v-space-3) 0 var(--v-space-6); color: var(--v-text-muted); max-width: 65ch; }
+
+/* Movimento: entrada opt-in e pressão curta; conteúdo permanece estável. */
+@keyframes v-reveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+.v-enter { animation: v-reveal var(--v-duration-enter) var(--v-ease) both; }
+@media (max-width: 580px) { .v-card { padding: var(--v-space-6); } }
+@media (prefers-reduced-motion: reduce) {
+  .v-button:active:not(:disabled) { transform: none; }
+  .v-enter { animation: none; }
+}
