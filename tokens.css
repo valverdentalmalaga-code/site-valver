@@ -1,0 +1,78 @@
+/* Valver Dental · design tokens v1.1 · valores propostos para o ambiente digital */
+@font-face {
+  font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600 700;
+  font-display: swap; src: url('./assets/fonts/cormorant-garamond-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans'; font-style: normal; font-weight: 400 800;
+  font-display: swap; src: url('./assets/fonts/plus-jakarta-sans-latin.woff2') format('woff2');
+}
+:root {
+  color-scheme: light;
+  --v-ivory: #F7F6EF;
+  --v-paper: #FFFFFF;
+  --v-olive: #59633B;
+  --v-olive-dark: #414B2B;
+  --v-sage: #E9EBDD;
+  --v-sage-deep: #A1A88C;
+  --v-sand: #E9E3D8;
+  --v-ink: #262B20;
+  --v-stone: #626655;
+  --v-line: #D8DBCC;
+  --v-control-line: #7D846F;
+  --v-error: #963F32;
+  --v-error-bg: #F9EDE9;
+  --v-success: #3F6348;
+  --v-success-bg: #EDF2E9;
+  --v-warning: #795716;
+  --v-warning-bg: #F7EED8;
+  --v-bg: var(--v-ivory);
+  --v-surface: var(--v-paper);
+  --v-text: var(--v-ink);
+  --v-text-muted: var(--v-stone);
+  --v-action: var(--v-olive);
+  --v-action-hover: var(--v-olive-dark);
+  --v-on-action: var(--v-paper);
+  --v-font-display: 'Cormorant Garamond', Georgia, serif;
+  --v-font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --v-font-code: 'SFMono-Regular', Consolas, monospace;
+  --v-text-display: clamp(3.25rem, 6vw, 5.5rem);
+  --v-text-h1: clamp(2.5rem, 4.5vw, 4rem);
+  --v-text-h2: clamp(2rem, 3vw, 2.75rem);
+  --v-text-h3: 1.75rem;
+  --v-text-body: 1rem;
+  --v-text-small: .875rem;
+  --v-text-label: .6875rem;
+  --v-leading-display: 1.02;
+  --v-leading-heading: 1.15;
+  --v-leading-body: 1.7;
+  --v-tracking-label: .16em;
+  --v-space-1: .25rem;
+  --v-space-2: .5rem;
+  --v-space-3: .75rem;
+  --v-space-4: 1rem;
+  --v-space-6: 1.5rem;
+  --v-space-8: 2rem;
+  --v-space-12: 3rem;
+  --v-space-16: 4rem;
+  --v-space-24: 6rem;
+  --v-radius-sm: .25rem;
+  --v-radius-md: .75rem;
+  --v-radius-lg: 1.5rem;
+  --v-radius-pill: 999px;
+  --v-radius-control: .5rem;
+  --v-radius-card: 1.125rem;
+  --v-radius-action: var(--v-radius-pill);
+  --v-component-padding: var(--v-space-8);
+  --v-press-scale: .97;
+  --v-shadow: none;
+  --v-container: 75rem;
+  --v-gutter: clamp(1.25rem, 4vw, 4rem);
+  --v-duration-fast: 160ms;
+  --v-duration-base: 240ms;
+  --v-duration-enter: 480ms;
+  --v-ease: cubic-bezier(.22, 1, .36, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --v-duration-fast: 0ms; --v-duration-base: 0ms; --v-duration-enter: 0ms; }
+}
