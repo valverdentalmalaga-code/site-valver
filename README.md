@@ -177,3 +177,7 @@ Cada commit descreve os arquivos incluídos e seu propósito. A importação reg
 ## Validação da entrega
 
 Build e tipagem verificados, com revisão em Chromium nas larguras 320, 390, 768 e 1440 px. A conferência inclui o número de fotos visíveis, a ordem da fachada e do texto, a ausência de overflow, contatos, movimento reduzido e carregamento das imagens.
+
+## Indexação e busca local
+
+O site inclui `robots.txt`, `sitemap.xml` com imagens, canonical HTTPS e dados estruturados de clínica odontológica em Málaga. O guia visual fica fora da indexação. Para vincular o sitemap ao Search Console e manter os metadados, consulte [docs/SEO.md](docs/SEO.md).

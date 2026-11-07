@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://valverdental.com/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <image:image>
+      <image:loc>https://valverdental.com/assets/photos/instalaciones-fachada.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://valverdental.com/assets/photos/instalaciones/sala-espera.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://valverdental.com/assets/photos/instalaciones/gabinete.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://valverdental.com/assets/photos/instalaciones/atencion.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://valverdental.com/assets/photos/instalaciones/despacho.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://valverdental.com/assets/photos/instalaciones/pasillo.webp</image:loc>
+    </image:image>
+  </url>
+</urlset>
