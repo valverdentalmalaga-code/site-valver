@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F7F6EF">
+  <meta name="description" content="Sistema visual de Valver Dental: colores, tipografía, componentes y movimiento para una experiencia digital cercana, serena y humana.">
+  <title>Valver Dental — Sistema de diseño</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2359633B'/%3E%3Ctext x='32' y='48' text-anchor='middle' fill='%23F7F6EF' font-family='Georgia' font-size='48'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="./assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./guide.css">
+  <script src="./guide.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir al contenido</a>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="external" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+    <symbol id="replay" viewBox="0 0 24 24"><path d="M4 11a8 8 0 1 1 2 7M4 4v7h7"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></symbol>
+    <symbol id="tooth" viewBox="0 0 24 24"><path d="M12 4C8 1 3 3 4 9c.4 3 2 4 2.5 8 .3 2 1 4 2.2 4 1.8 0 1-8 3.3-8s1.5 8 3.3 8c1.2 0 1.9-2 2.2-4 .5-4 2.1-5 2.5-8 1-6-4-8-8-5Zm0 0 2 1"/></symbol>
+    <symbol id="gums" viewBox="0 0 24 24"><path d="M12 4C8 2 5 3 6 8l2 9c1 3 2-5 4-5s3 8 4 5l2-9c1-5-2-6-6-4Z M2 17c0-4 2-6 5-5m10 0c3-1 5 1 5 5M3 21h3m4 0h4m4 0h3"/></symbol>
+    <symbol id="braces" viewBox="0 0 24 24"><path d="M12 4C8 1 3 3 4 9l3 11c1 3 2-7 5-7s4 10 5 7l3-11c1-6-4-8-8-5Z M2 10h7m6 0h7"/><rect x="9" y="8" width="6" height="4" rx="1"/></symbol>
+    <symbol id="implant" viewBox="0 0 24 24"><path d="M12 4C7 1 3 4 5 9l2 4h10l2-4c2-5-2-8-7-5ZM8 13l2 8h4l2-8M9 16h6m-5 3h4"/></symbol>
+    <symbol id="crown" viewBox="0 0 24 24"><path d="M12 5C8 2 3 4 4 10l2 8h12l2-8c1-6-4-8-8-5ZM6 18v3h12v-3M12 5l2 1"/></symbol>
+    <symbol id="sparkle" viewBox="0 0 24 24"><path d="M11 4C7 1 2 4 3 9l3 11c1 3 2-7 5-7s4 10 5 7l2-8M18 1l1.4 4.6L23 7l-3.6 1.4L18 13l-1.4-4.6L13 7l3.6-1.4Z"/></symbol>
+    <symbol id="leaves" viewBox="0 0 200 240"><path d="M35 235C70 180 101 108 144 15" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M61 190C15 160 14 130 15 104c37 12 55 38 46 86ZM88 139C47 104 51 76 57 50c32 16 42 47 31 89ZM113 88C89 51 102 26 122 4c17 28 16 54-9 84ZM65 187c30-39 65-46 97-40-17 32-47 47-97 40ZM91 135c32-34 65-34 90-23-22 29-48 36-90 23ZM118 77c24-34 48-35 73-31-12 27-38 43-73 31Z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<aside class="sidebar" aria-label="Navegación del sistema de diseño">
+  <a class="wordmark" href="#identidade" aria-label="Valver Dental, inicio"><span>VALVER</span><small>DENTAL</small></a>
+  <p class="nav-label">Biblioteca de marca</p>
+  <nav aria-label="Secciones">
+    <a href="#identidade" aria-current="location"><span>01</span>Esencia e identidad</a>
+    <a href="#cores"><span>02</span>Paleta de colores</a>
+    <a href="#tipografia"><span>03</span>Tipografia</a>
+    <a href="#componentes"><span>04</span>Componentes</a>
+    <a href="#estrutura"><span>05</span>Espacio y forma</a>
+    <a href="#movimento"><span>06</span>Movimiento</a>
+    <a href="#aplicacao"><span>07</span>Aplicación web</a>
+    <a href="#implementacao"><span>08</span>Para desarrollar</a>
+  </nav>
+  <div class="sidebar-foot"><div class="edition"><i class="dot"></i>Sistema de diseño · v1.2</div><p>Precisión en cada cuidado.<br>Calidez en cada encuentro.</p></div>
+</aside>
+
+<main id="conteudo" tabindex="-1">
+  <header class="topbar"><span>Valver Dental / Experiencia digital</span><a href="./index.html">Ver sitio <svg class="v-icon" aria-hidden="true"><use href="#external"/></svg></a></header>
+
+  <section class="hero" id="identidade" aria-labelledby="hero-title">
+    <p class="v-label eyebrow">Una identidad, muchas formas de cuidar</p>
+    <div class="hero-grid">
+      <div>
+        <h1 class="v-display" id="hero-title">Cuidado que<br>se siente.<br><span>Diseño que<br>acompaña.</span></h1>
+        <p class="intro">Creemos en una odontología cercana, donde cada persona se sienta escuchada. Esta identidad une la serenidad de la naturaleza con el cuidado de cada detalle.</p>
+        <div class="hero-actions"><a class="v-button" href="#componentes">Explorar componentes <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></a><a class="v-button v-button--quiet" href="#cores">Descubrir los colores</a></div>
+      </div>
+      <div class="brand-art" aria-label="Composición editorial de Valver Dental con un icono de diente y hojas">
+        <svg class="v-icon" aria-hidden="true"><use href="#tooth"/></svg>
+        <div class="wordmark"><span>VALVER</span><small>DENTAL</small></div>
+        <svg class="botanical" aria-hidden="true"><use href="#leaves"/></svg>
+        <span class="art-caption">Naturalmente, cerca de ti.</span>
+      </div>
+    </div>
+    <div class="principles">
+      <div class="principle"><strong>Serena.</strong><p>Espacios para respirar, tonos naturales y gestos suaves.</p></div>
+      <div class="principle"><strong>Precisa.</strong><p>Información clara, líneas delicadas y atención al detalle.</p></div>
+      <div class="principle"><strong>Humana.</strong><p>Palabras cercanas y una experiencia que inspira confianza.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="cores" aria-labelledby="cores-title">
+    <header class="section-head"><div><span class="v-label">02 / Paleta de colores</span><h2 class="v-h2" id="cores-title">Colores que transmiten calma.</h2></div><p>El oliva nos identifica. El marfil nos envuelve.<br>Selecciona un color para copiar su código HEX.</p></header>
+    <div class="swatches">
+      <button class="swatch" data-copy="#59633B" aria-label="Copiar oliva Valver, #59633B"><span class="swatch-color olive"><span>#59633B</span><svg class="v-icon" aria-hidden="true"><use href="#copy"/></svg></span><span class="swatch-info"><strong>Oliva Valver</strong><small>--v-olive · marca y acciones</small></span></button>
+      <button class="swatch" data-copy="#F7F6EF" aria-label="Copiar marfil, #F7F6EF"><span class="swatch-color ivory"><span>#F7F6EF</span><svg class="v-icon" aria-hidden="true"><use href="#copy"/></svg></span><span class="swatch-info"><strong>Marfil</strong><small>--v-ivory · fondo</small></span></button>
+      <button class="swatch" data-copy="#E9EBDD" aria-label="Copiar salvia, #E9EBDD"><span class="swatch-color sage"><span>#E9EBDD</span><svg class="v-icon" aria-hidden="true"><use href="#copy"/></svg></span><span class="swatch-info"><strong>Salvia</strong><small>--v-sage · apoyo</small></span></button>
+      <button class="swatch" data-copy="#262B20" aria-label="Copiar tinta, #262B20"><span class="swatch-color ink"><span>#262B20</span><svg class="v-icon" aria-hidden="true"><use href="#copy"/></svg></span><span class="swatch-info"><strong>Tinta</strong><small>--v-ink · texto</small></span></button>
+    </div>
+    <div class="support-colors"><span><i class="color-dot" style="background:var(--v-paper)"></i>Papel · #FFFFFF</span><span><i class="color-dot" style="background:var(--v-sand)"></i>Arena · #E9E3D8</span><span><i class="color-dot" style="background:var(--v-stone)"></i>Piedra · #626655</span><span><i class="color-dot" style="background:var(--v-line)"></i>Línea · #D8DBCC</span></div>
+    <div class="note"><strong>Equilibrio sugerido: 70 % marfil, 20 % superficies suaves y 10 % oliva.</strong> La salvia y la arena acompañan sin distraer. Para facilitar la lectura, utilizamos tinta, piedra u oliva. Contraste estimado: blanco sobre oliva 6,42:1; oliva sobre marfil 5,92:1. Esta es una propuesta digital inspirada en las referencias visuales, no un manual oficial.</div>
+    <div class="subhead"><h3>Colores que también orientan</h3><span class="small">Siempre con texto e iconos</span></div>
+    <div class="grid-3">
+      <div class="v-alert"><svg class="v-icon" aria-hidden="true"><use href="#check"/></svg><div><strong>Confirmación</strong><br>Mensaje enviado.<br><span class="small">#3F6348 / #EDF2E9</span></div></div>
+      <div class="v-alert v-alert--warning"><svg class="v-icon" aria-hidden="true"><use href="#info"/></svg><div><strong>Atención</strong><br>Revisa los datos antes de continuar.<br><span class="small">#795716 / #F7EED8</span></div></div>
+      <div class="v-alert v-alert--error"><svg class="v-icon" aria-hidden="true"><use href="#info"/></svg><div><strong>Error</strong><br>Completa el campo señalado.<br><span class="small">#963F32 / #F9EDE9</span></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="tipografia" aria-labelledby="type-title">
+    <header class="section-head"><div><span class="v-label">03 / Tipografía</span><h2 class="v-h2" id="type-title">La belleza de lo sencillo.</h2></div><p>Dos tipografías que se complementan.<br>Archivos locales, sin depender de servicios externos.</p></header>
+    <div class="font-pair">
+      <article class="font-card"><span class="font-title">Cormorant Garamond</span><div class="font-sample">Aa Bb Cc</div><p>Expresión editorial · peso 600<br>Para titulares y mensajes que merecen un momento de atención. Su estilo aporta sensibilidad y personalidad.</p></article>
+      <article class="font-card sans"><span class="font-title">Plus Jakarta Sans</span><div class="font-sample">Aa Bb Cc</div><p>Claridad y lectura · pesos 400, 500 y 600<br>Para textos, botones y formularios. Una voz clara y amable que facilita cada paso.</p></article>
+    </div>
+    <div class="type-scale">
+      <div class="type-row"><small>Display<br>600 / 1.02</small><div class="v-display">Tu sonrisa,<br>en buenas manos.</div><small>52–88 px<br>muestra: 36–64</small></div>
+      <div class="type-row"><small>Título 1<br>600 / 1.15</small><div class="v-h1">Cuidar es conectar.</div><small>40–64 px<br>muestra: 44</small></div>
+      <div class="type-row"><small>Título 2<br>600 / 1.15</small><div class="v-h2">Cada detalle importa.</div><small>32–44 px<br>muestra: 32</small></div>
+      <div class="type-row"><small>Título 3<br>600 / 1.15</small><div class="v-h3">Un cuidado cercano.</div><small>28 px</small></div>
+      <div class="type-row"><small>Texto<br>400 / 1.70</small><p class="v-body">Primero te escuchamos. Después, buscamos juntos la mejor forma de cuidar tu sonrisa.</p><small>16 px<br>máx. 65 caracteres</small></div>
+      <div class="type-row"><small>Etiqueta<br>600 / 1.50</small><p class="v-label">Odontología con propósito</p><small>11 px<br>tracking .16em</small></div>
+    </div>
+    <p class="note">La tipografía exacta del logotipo no está confirmada. Cormorant Garamond es la propuesta para el sitio y la firma de esta página es ilustrativa. En la versión final debe utilizarse el logotipo oficial en SVG, sin modificarlo.</p>
+  </section>
+
+  <section class="section" id="componentes" aria-labelledby="components-title">
+    <header class="section-head"><div><span class="v-label">04 / Componentes</span><h2 class="v-h2" id="components-title">Cada gesto cuenta.</h2></div><p>Botones claros, mensajes amables y detalles que acompañan sin distraer.</p></header>
+    <div class="grid-2 component-controls">
+      <article class="panel"><h3 class="panel-title">Un paso a la vez <span>Tres niveles de prioridad · mínimo 48 px</span></h3>
+        <div class="control-sample"><p class="control-caption"><strong>Principal</strong>La acción que ayuda a seguir adelante.</p><button class="v-button" data-demo>Agendar una cita <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button></div>
+        <div class="control-sample"><p class="control-caption"><strong>Secundaria</strong>Otra opción, sin competir por tu atención.</p><button class="v-button v-button--secondary" data-demo>Conocer la clínica</button></div>
+        <div class="control-sample"><p class="control-caption"><strong>Enlace discreto</strong>Para descubrir más, a tu propio ritmo.</p><button class="v-button v-button--quiet" data-demo>Saber más <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button></div>
+      </article>
+      <article class="panel"><h3 class="panel-title">Campos y validación <span>Prueba local · sin envío de datos</span></h3>
+        <form id="demo-form" class="field-stack" novalidate>
+          <div class="v-field"><label for="demo-name">¿Cómo te gustaría que te llamemos?</label><input class="v-input" id="demo-name" name="demo-name" autocomplete="off" placeholder="Escribe un nombre de ejemplo" required aria-describedby="name-help"><span class="v-help" id="name-help">Escribe un nombre de ejemplo. No enviaremos ni guardaremos estos datos.</span></div>
+          <div class="v-field"><label for="demo-service">¿Qué tipo de atención buscas?</label><select class="v-select" id="demo-service" name="demo-service"><option value="geral">Odontología general</option><option value="periodontia">Periodoncia</option><option value="ortodontia">Ortodoncia</option><option value="cirurgia">Cirugía integral</option><option value="estetica">Estética dental</option><option value="prostodoncia">Prostodoncia</option></select></div>
+          <label class="check-label"><input class="v-check" type="checkbox">Prefiero que me contacten por la mañana</label>
+          <button class="v-button v-button--secondary" type="submit">Probar el formulario <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button>
+          <p id="form-result" class="v-help" role="status"></p>
+        </form>
+      </article>
+    </div>
+    <div class="component-states"><p>Otros estados</p><button class="v-button" disabled>No disponible</button><span class="v-badge">Atención personalizada</span></div>
+    <p class="small">Puedes recorrer los controles con Tab y probar cómo responden al tacto. Son ejemplos interactivos: no realizan reservas ni envían información.</p>
+    <div class="subhead"><h3>Áreas de atención</h3><span class="small">Lo importante, siempre a la vista</span></div>
+    <div class="grid-2">
+      <article class="v-card v-service"><div class="service-meta"><span class="v-label">Prevención y bienestar</span></div><svg class="v-icon" aria-hidden="true"><use href="#tooth"/></svg><h4 class="v-h3">Odontología general</h4><p>Estamos contigo desde las revisiones preventivas hasta el seguimiento de tu salud bucal.</p><button class="v-button v-button--quiet" data-demo>Conocer esta atención <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button></article>
+      <article class="v-card v-service"><div class="service-meta"><span class="v-label">Armonía y naturalidad</span></div><svg class="v-icon" aria-hidden="true"><use href="#sparkle"/></svg><h4 class="v-h3">Estética dental</h4><p>Cada sonrisa es diferente. Te escuchamos y buscamos opciones que respeten la tuya.</p><button class="v-button v-button--quiet" data-demo>Conocer esta atención <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button></article>
+      <article class="v-card v-service"><div class="service-meta"><span class="v-label">Planificación y acompañamiento</span></div><svg class="v-icon" aria-hidden="true"><use href="#implant"/></svg><h4 class="v-h3">Cirugía integral</h4><p>Valoramos cada caso para planificar la atención quirúrgica y acompañarte antes y después de cada paso.</p><button class="v-button v-button--quiet" data-demo>Conocer esta atención <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button></article>
+      <article class="v-card v-service"><div class="service-meta"><span class="v-label">Función y bienestar</span></div><svg class="v-icon" aria-hidden="true"><use href="#crown"/></svg><h4 class="v-h3">Prostodoncia</h4><p>Planificamos la rehabilitación de piezas dentales para cuidar la función, la comodidad y la armonía de tu sonrisa.</p><button class="v-button v-button--quiet" data-demo>Conocer esta atención <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button></article>
+    </div>
+    <div class="subhead"><h3>Iconos que hablan el mismo idioma</h3><span class="small">SVG · cuadrícula de 24 × 24 · trazo 1,5</span></div>
+    <div class="icon-grid">
+      <div class="icon-item"><svg class="v-icon" aria-hidden="true"><use href="#tooth"/></svg><span>General</span></div>
+      <div class="icon-item"><svg class="v-icon" aria-hidden="true"><use href="#gums"/></svg><span>Periodoncia</span></div>
+      <div class="icon-item"><svg class="v-icon" aria-hidden="true"><use href="#braces"/></svg><span>Ortodoncia</span></div>
+      <div class="icon-item"><svg class="v-icon" aria-hidden="true"><use href="#implant"/></svg><span>Cirugía integral</span></div>
+      <div class="icon-item"><svg class="v-icon" aria-hidden="true"><use href="#sparkle"/></svg><span>Estética</span></div>
+      <div class="icon-item"><svg class="v-icon" aria-hidden="true"><use href="#crown"/></svg><span>Prostodoncia</span></div>
+    </div>
+    <details class="v-faq"><summary>¿Cómo utilizamos los iconos y los detalles botánicos?</summary><p>Los iconos ayudan a reconocer servicios y acciones. Las hojas y los arcos aportan una sensación de calma, sin quitarle protagonismo a lo que necesitas saber.</p></details>
+    <details class="v-faq"><summary>¿Cómo queremos hablar contigo?</summary><p>Con palabras sencillas y cercanas. Preferimos decir «Estamos aquí para escucharte» antes que recurrir a frases impersonales. No prometemos resultados ni presionamos: cada persona necesita su propio tiempo.</p></details>
+  </section>
+
+  <section class="section" id="estrutura" aria-labelledby="space-title">
+    <header class="section-head"><div><span class="v-label">05 / Espacio y forma</span><h2 class="v-h2" id="space-title">El espacio también cuida.</h2></div><p>Márgenes amplios, ritmo sereno y curvas inspiradas en la naturaleza.</p></header>
+    <div class="grid-2">
+      <article class="panel"><h3 class="panel-title">Escala de espaciado <span>Base de 4 px</span></h3><div class="space-scale"><div class="space-unit"><i style="height:4px"></i>4</div><div class="space-unit"><i style="height:8px"></i>8</div><div class="space-unit"><i style="height:12px"></i>12</div><div class="space-unit"><i style="height:16px"></i>16</div><div class="space-unit"><i style="height:24px"></i>24</div><div class="space-unit"><i style="height:32px"></i>32</div><div class="space-unit"><i style="height:48px"></i>48</div><div class="space-unit"><i style="height:64px"></i>64</div><div class="space-unit"><i style="height:96px"></i>96</div></div></article>
+      <article class="panel"><h3 class="panel-title">Radios y superficies <span>Cada curva tiene un propósito</span></h3><div class="radius-row"><div class="radius-item"><div style="border-radius:var(--v-radius-control)"></div>8 px<br>Campos</div><div class="radius-item"><div style="border-radius:var(--v-radius-card)"></div>18 px<br>Tarjetas</div><div class="radius-item"><div style="border-radius:var(--v-radius-action)"></div>Cápsula<br>Acciones</div><div class="radius-item"><div style="border-radius:50% 50% 4px 4px"></div>Arco<br>Editorial</div></div></article>
+    </div>
+    <div class="layout-demo"><div class="panel-title">Cuadrícula del sitio <span>Ancho máximo: 1.200 px</span></div><div class="columns" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="layout-spec"><span>Escritorio ≥ 1.024 px · 12 columnas</span><span>Tableta ≥ 640 px · 8 columnas</span><span>Móvil &lt; 640 px · 4 columnas</span></div></div>
+    <p class="small" style="margin-top:16px">En el sitio: separaciones de 24 px en escritorio y 16 px en móvil; espacios entre secciones de 96, 64 y 48 px. En pantallas pequeñas, el menú de esta guía se desplaza horizontalmente.</p>
+  </section>
+
+  <section class="section" id="movimento" aria-labelledby="motion-title">
+    <header class="section-head"><div><span class="v-label">06 / Movimiento</span><h2 class="v-h2" id="motion-title">Movimiento con intención.</h2></div><p>Transiciones suaves que ayudan a orientarte.<br>Sin efectos que distraigan o dificulten la lectura.</p></header>
+    <div class="grid-3">
+      <article class="panel motion-card"><div class="motion-stage"><div class="motion-object" id="motion-reveal"><svg class="v-icon" aria-hidden="true"><use href="#tooth"/></svg></div></div><div class="motion-copy"><h3>Aparición delicada</h3><p>480 ms · opacidad y desplazamiento de 12 px<br>Para mostrar el contenido sin sobresaltos.</p><button class="replay" data-motion="reveal"><svg class="v-icon" aria-hidden="true"><use href="#replay"/></svg>Reproducir aparición</button></div></article>
+      <article class="panel motion-card"><div class="motion-stage"><button class="v-button motion-press" id="motion-press" data-motion="press" aria-label="Probar respuesta al tacto"><svg class="v-icon" aria-hidden="true"><use href="#sparkle"/></svg></button></div><div class="motion-copy"><h3>Respuesta al tacto</h3><p>160 ms · escala al 97 %<br>Una señal sutil al pulsar un botón.</p><button class="replay" data-motion="press"><svg class="v-icon" aria-hidden="true"><use href="#replay"/></svg>Reproducir pulsación</button></div></article>
+      <article class="panel motion-card"><div class="motion-stage"><button class="v-button" id="motion-feedback" data-demo>Continuar <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button></div><div class="motion-copy"><h3>Confirmación visual</h3><p>160 ms · cambio de color<br>Para que cada interacción tenga respuesta.</p><button class="replay" data-motion="feedback"><svg class="v-icon" aria-hidden="true"><use href="#replay"/></svg>Reproducir respuesta</button></div></article>
+    </div>
+    <p class="note" style="margin-top:20px"><strong>El movimiento también debe ser accesible.</strong> Con <code>prefers-reduced-motion</code>, las apariciones, los desplazamientos y el desplazamiento suave se desactivan. La información permanece visible. Curva principal: <code>cubic-bezier(.22, 1, .36, 1)</code>.</p>
+  </section>
+
+  <section class="section" id="aplicacao" aria-labelledby="web-title">
+    <header class="section-head"><div><span class="v-label">07 / Aplicación web</span><h2 class="v-h2" id="web-title">Así se siente Valver.</h2></div><p>Una propuesta para la página de inicio.<br>Palabras cercanas y una experiencia tranquila.</p></header>
+    <div class="preview-shell">
+      <div class="preview-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>VALVER DENTAL · PROPUESTA DE INICIO</span><span>01</span></div>
+      <div lang="es">
+        <div class="preview-nav"><div class="wordmark"><span>VALVER</span><small>DENTAL</small></div><div class="preview-links"><a href="#componentes">Nuestros servicios</a><a href="#clinica-demo">Nuestra esencia ↗</a></div></div>
+        <div class="preview-hero" id="clinica-demo"><div><span class="v-label">Odontología cercana</span><h3>Tu sonrisa.<br><span>Nuestra forma<br>de cuidar.</span></h3><p>Queremos conocerte, saber qué necesitas y acompañarte con atención y cercanía. Porque cada sonrisa tiene su propia historia.</p><button class="v-button" data-demo>Agenda tu consulta <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button></div><div class="preview-illustration" aria-hidden="true"><svg class="v-icon"><use href="#tooth"/></svg><svg class="botanical"><use href="#leaves"/></svg></div></div>
+        <div class="preview-services"><span>Odontología general</span><span>Periodoncia</span><span>Ortodoncia</span><span>Cirugía integral</span><span>Estética dental</span><span>Prostodoncia</span></div>
+      </div>
+    </div>
+    <p class="small" style="margin-top:16px">Dirección de arte: luz natural, escenas auténticas y personas reales, siempre con su autorización. La ilustración señala un espacio para futuras fotografías de la clínica. El botón de cita es solo una demostración.</p>
+  </section>
+
+  <section class="section" id="implementacao" aria-labelledby="dev-title">
+    <header class="section-head"><div><span class="v-label">08 / Para desarrollar</span><h2 class="v-h2" id="dev-title">Del cuidado a cada detalle.</h2></div><p>HTML, CSS y JavaScript sin complicaciones.<br>Componentes listos para acompañar el próximo sitio.</p></header>
+    <div class="implementation">
+      <div class="code-panel"><p>Empieza por los fundamentos</p><pre><code>&lt;link rel="stylesheet" href="tokens.css"&gt;
+&lt;link rel="stylesheet" href="components.css"&gt;
+
+&lt;h1 class="v-h1"&gt;
+  Tu sonrisa, en buenas manos.
+&lt;/h1&gt;
+
+&lt;a class="v-button" href="/agendar"&gt;
+  Agenda tu consulta
+&lt;/a&gt;</code></pre></div>
+      <div class="file-list"><a href="./tokens.css" download><span>tokens.css <small>· colores, fuentes y escalas</small></span><svg class="v-icon" aria-hidden="true"><use href="#external"/></svg></a><a href="./components.css" download><span>components.css <small>· biblioteca de componentes</small></span><svg class="v-icon" aria-hidden="true"><use href="#external"/></svg></a><a href="./README.md" download><span>README.md <small>· decisiones e integración</small></span><svg class="v-icon" aria-hidden="true"><use href="#external"/></svg></a><p class="small">Copia también <code>assets/fonts/</code>, conservando sus licencias. Los símbolos SVG se encuentran al principio de este HTML.</p></div>
+    </div>
+    <details class="v-faq analysis"><summary>Referencia y decisiones de diseño</summary><ul><li><strong>HTML analizado:</strong> FlowDetect organiza tipografía, colores, componentes, composiciones y movimiento. Conservamos esa estructura para documentar el sistema.</li><li><strong>Tipografías:</strong> la referencia utiliza Montserrat, Plus Jakarta Sans y Cormorant Garamond. En Valver, Cormorant Garamond protagoniza los titulares y Plus Jakarta Sans facilita la lectura.</li><li><strong>Colores:</strong> sustituimos el azul oscuro y el cian de la referencia por marfil y oliva, propios de esta propuesta para Valver. Evitamos neones, brillos y degradados decorativos.</li><li><strong>Movimiento:</strong> Valver utiliza transiciones breves y apariciones progresivas, sin movimientos continuos. Las preferencias de movimiento reducido siempre tienen prioridad.</li><li><strong>Identidad:</strong> tipografía editorial, botánica discreta, arcos, espacios amplios e iconos lineales crean un lenguaje reconocible. El sitio final deberá integrar el logotipo oficial en formato vectorial.</li></ul></details>
+  </section>
+  <footer><span>VALVER DENTAL · Sistema de diseño 1.2</span><span>Diseñado para cuidar cada detalle.</span><a href="#identidade">Volver al inicio ↑</a></footer>
+</main>
+<div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<dialog class="demo-dialog" aria-labelledby="dialog-title"><span class="v-label">Vista previa del componente</span><h2 class="v-h2" id="dialog-title">Tu próximo paso, sin complicaciones.</h2><p>Esta es una demostración del sistema de diseño. En el sitio definitivo, cada botón abrirá la información o el servicio que corresponda. No se ha enviado ninguna solicitud.</p><form method="dialog"><button class="v-button">Volver a la guía <svg class="v-icon" aria-hidden="true"><use href="#arrow"/></svg></button></form></dialog>
+</body>
+</html>
